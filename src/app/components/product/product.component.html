@@ -1,6 +1,16 @@
+<div *ngIf="dataLoaded==false" class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
 <table class="table">
     <thead>
-        
+        <tr>
+            <th>Id</th>
+            <th>Ürün Adı</th>
+            <th>Kategori</th>
+            <th>Fiyat</th>
+            <th>Stok</th>
+        </tr>
     </thead>
 <tr *ngFor="let item of products">
     <td>{{item.productId}}</td>
